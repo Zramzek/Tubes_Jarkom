@@ -1,5 +1,5 @@
 .atas {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("assets/server.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../assets/server.png");
     height: 1080px;
     background-position: center;
     background-repeat: no-repeat;
@@ -100,7 +100,6 @@
   margin-right: auto;
   width: 1500px;
   height: 1000px;
-  /* margin-left: ; */
   background: rgba(255, 255, 255, 0.05);
   border: 5px white;
   border-radius: 100px;

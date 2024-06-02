@@ -23,7 +23,7 @@ def make_request(file_name):
     
     client_socket.close()
 
-file_names = ['index.html', 'index2.html', 'buku.png', 'index4.html', 'index5.html']
+file_names = ['index.html', 'index2.html', 'assets/buku.png', 'design.css']
 
 threads = []
 
