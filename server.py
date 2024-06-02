@@ -16,14 +16,7 @@ def handle_connection(connectionSocket):
         # Dictionary for mapping file extension to content type
         content_types = {
             'html': 'text/html',
-            'css': 'text/css',
-            'jpeg': 'image/jpeg',
-            'jpg': 'image/jpg',
-            'png': 'image/png',
-            'txt': 'text/plain',
-            'js': 'application/javascript',
-            'mp4': 'video/mp4',
-            'scss': 'text/css',
+            'png': 'image/png'
         }
 
         # Open the requested file
@@ -42,7 +35,7 @@ def handle_connection(connectionSocket):
 
         except IOError:
             # File not found, send 404 response
-            with open('/404.html', 'rb') as file:
+            with open('404.html', 'rb') as file:
                 file_content = file.read()
             response_header = 'HTTP/1.1 404 Not Found\r\nContent-Type: text/html\r\n\r\n'
             response_content = file_content
